@@ -1,0 +1,107 @@
+@import "_reset-vars.scss";
+
+* {
+  font-family: $myfont;
+  color: $col3;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  img {
+    width: 250px;
+    margin-left: $size1;
+  }
+}
+
+header {
+  display: flex;
+  background-color: $col6;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+}
+
+header {
+  a {
+    color: $col2;
+    font-size: 25px;
+    background-color: $col5;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    margin-right: $size2;
+  }
+}
+
+.cont {
+  width: 65%;
+  margin: auto;
+}
+
+.cont {
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.win {
+  font-size: 50px;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+.line {
+  background-color: $col6;
+  height: 25vh;
+}
+
+.line {
+  h2 {
+    color: $col9;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    img {
+      margin: 0;
+    }
+  }
+
+  header {
+    a {
+      margin: 0;
+      margin-right: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header {
+    img {
+      margin: 0;
+      width: 150px;
+    }
+  }
+}
+
+.cont {
+  a {
+    margin-top: 25px;
+    font-size: larger;
+  }
+}
+
+.cont {
+  a:hover {
+    text-decoration: underline;
+  }
+}
