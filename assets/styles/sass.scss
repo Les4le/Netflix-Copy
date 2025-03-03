@@ -1,0 +1,245 @@
+@import "_reset.scss";
+@import "_vars.scss";
+
+* {
+  font-family: $myfont;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url($myback);
+  background-repeat: repeat;
+}
+
+header {
+  img {
+    width: 250px;
+    margin-left: $size1;
+  }
+}
+
+header {
+  display: flex;
+  box-shadow: 0 0 200px rgba(0, 0, 0, 0.9) inset;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+}
+
+header {
+  a {
+    color: $col2;
+    font-size: 25px;
+    background-color: $col5;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    margin-right: $size2;
+  }
+}
+
+.text {
+  display: flex;
+  color: $col2;
+  align-items: center;
+  flex-direction: column;
+  height: 65vh;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.text {
+  a {
+    color: $col2;
+    font-size: 27px;
+    background-color: $col5;
+    padding: 15px;
+    border-radius: 5px;
+    width: 350px;
+    font-weight: 900;
+    text-align: center;
+  }
+}
+
+.text {
+  h1 {
+    font-size: 65px;
+    font-weight: 900;
+  }
+}
+
+.main {
+  color: $col2;
+  background-color: $col6;
+  padding-top: 5px;
+  height: auto;
+  width: 80vw;
+}
+
+.border {
+  background-color: $col6;
+  padding-top: 75px;
+  border-top: 4px solid red;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+aside {
+  width: 10vw;
+  background-color: $col6;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+}
+
+.maincards {
+  display: grid;
+  grid-template-columns: repeat(4, 23.5%);
+  grid-template-rows: auto;
+  gap: 2%;
+}
+
+.card {
+  width: 90%;
+  background: linear-gradient(
+    to bottom right,
+    rgb(24, 24, 75),
+    rgb(87, 32, 40)
+  );
+  border-radius: 25px;
+  padding: 5%;
+}
+
+.card {
+  h2 {
+    color: rgb(153, 153, 153);
+  }
+}
+
+.accordion {
+  background-color: $col3;
+  color: $col2;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 40px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: $col7;
+  font-size: 45px;
+}
+
+.panel {
+  padding: 0 18px;
+  font-size: $myfsize;
+  display: none;
+  background-color: $col8;
+  overflow: hidden;
+}
+
+.ashka {
+  color: $col2;
+  font-size: 27px;
+  background-color: $col5;
+  padding: 15px;
+  border-radius: 5px;
+  width: 350px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.endtext {
+  margin-top: 100px;
+}
+
+.endtext {
+  h2 {
+    margin-top: 105px;
+    color: gray;
+    font-weight: lighter;
+  }
+}
+
+.endtext {
+  h2 {
+    a {
+      color: gray;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .maincards {
+    grid-template-columns: repeat(2, 49%);
+    grid-template-rows: auto;
+  }
+
+  header {
+    img {
+      width: 200px;
+      margin-left: 0;
+    }
+  }
+
+  header {
+    a {
+      margin-right: 15px;
+    }
+  }
+
+  .text {
+    h1 {
+      font-size: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .maincards {
+    grid-template-columns: repeat(1, 106.5%);
+    grid-template-rows: auto;
+  }
+
+  .faq {
+    margin-top: 75px;
+  }
+
+  .text {
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .card {
+    padding: 2%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .text {
+    h1 {
+      font-size: 30px;
+    }
+  }
+
+  header {
+    img {
+      width: 150px;
+      margin-left: 0;
+    }
+  }
+}
