@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/sass.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <img
+        src="https://www.notebookcheck-ru.com/fileadmin/Notebooks/News/_nc3/Netflix_Logo_RGB44.png"
+        alt=""
+      />
+      <a href="./index2.html" id="anchor1">Увійти</a>
+    </header>
+    <div class="text">
+      <h1>Фільми, серіали й інший контент без обмежень</h1>
+      <h3>За ціною від 4,99 EUR. Скасувати підписку можна будь-коли.</h3>
+      <a href="./index4.html">Завершити реєстрацію ></a>
+    </div>
+    <div class="border"></div>
+    <div class="cont">
+      <aside></aside>
+      <div class="main">
+        <h1>Ще більше причин підписатися</h1>
+        <div class="maincards">
+          <div class="card">
+            <h1>Дивіться на телевізорі</h1>
+            <h2>
+              Дивіться на Smart TV, Playstation, Xbox, Chromecast, Apple TV,
+              Blu-ray-програвачах тощо.
+            </h2>
+            <img src="" alt="" />
+          </div>
+          <div class="card">
+            <h1>Завантажуйте контент і дивіться його офлайн</h1>
+            <h2>
+              Легко зберігайте улюблені телесеріали й фільми, щоб дивитися їх
+              будь-коли.
+            </h2>
+            <img src="" alt="" />
+          </div>
+          <div class="card">
+            <h1>Дивіться будь-де</h1>
+            <h2>
+              Дивіться фільми й телесеріали без обмежень на смартфоні, планшеті,
+              ноутбуці й телевізорі.
+            </h2>
+            <img src="" alt="" />
+          </div>
+          <div class="card">
+            <h1>Створюйте профілі для дітей</h1>
+            <h2>
+              Ваші діти зможуть мандрувати країною фантазії разом з улюбленими
+              персонажами в спеціальних профілях, які входять у вартість
+              підписки.
+            </h2>
+            <img src="" alt="" />
+          </div>
+        </div>
+        <h1 class="faq">Поширені Запитання</h1>
+        <button class="accordion">Що таке Netflix?</button>
+        <div class="panel">
+          <p>
+            Netflix — це сервіс потокового передавання відео, що дає змогу
+            дивитися різноманітні відзначені нагородами телесеріали, фільми,
+            аніме, документалістику й інший контент на тисячах пристроїв із
+            підключенням до Інтернету. Ви можете дивитися скільки завгодно й
+            коли завгодно без реклами, і все це за єдиною низькою щомісячною
+            ціною. Ви завжди знайдете для себе щось нове. Крім того, ще більше
+            телесеріалів і фільмів додається щотижня!
+          </p>
+        </div>
+
+        <button class="accordion">Скільки коштує підписка Netflix?</button>
+        <div class="panel">
+          <p>
+            Дивіться Netflix на смартфоні, планшеті, Smart TV, ноутбуці або
+            пристрої потокової передачі за фіксованою щомісячною ціною. Плани
+            від 4,99 EUR до 9,99 EUR на місяць. Без доплат й угод.
+          </p>
+        </div>
+
+        <button class="accordion">Де можна дивитися контент?</button>
+        <div class="panel">
+          <p>
+            Дивіться будь-де, будь-коли. Увійдіть у свій обліковий запис
+            Netflix, щоб дивитися контент онлайн на сайті netflix.com із
+            персонального компʼютера або будь-якого пристрою з підключенням до
+            Інтернету, на якому можна завантажити застосунок Netflix, як-от
+            Smart TV, смартфон, планшет, потоковий програвач або ігрова
+            приставка. Ви також можете завантажувати улюблені серіали в
+            застосунку для iOS або Android. Завантажуйте контент і дивіться його
+            в дорозі навіть без підключення до Інтернету. Беріть Netflix із
+            собою.
+          </p>
+        </div>
+
+        <button class="accordion">Як скасувати підписку?</button>
+        <div class="panel">
+          <p>
+            Netflix надає гнучкі умови. Жодних надокучливих угод чи зобов’язань.
+            Скасувати підписку можна всього за два кліки. Жодних комісій за
+            скасування. Оформити або скасувати підписку можна будь-коли.
+          </p>
+        </div>
+
+        <button class="accordion">Що можна подивитися на Netflix?</button>
+        <div class="panel">
+          <p>
+            Netflix пропонує обширну бібліотеку художніх фільмів,
+            документалістики, телесеріалів, аніме, відзначеного нагородами
+            оригінального контенту тощо. Дивіться скільки завгодно й коли
+            завгодно.
+          </p>
+        </div>
+
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+              } else {
+                panel.style.display = "block";
+              }
+            });
+          }
+        </script>
+        <div class="endtext">
+          <h2>
+            Маєте запитання? Зателефонуйте за номером
+            <a href="tel:0800-509-416"> 0800-509-416</a>
+          </h2>
+          <a href="./index6.html" class="faq">Поширені запитання</a>
+          <h2>Netflix Україна // Григорьев - Котинский Никита (П42)</h2>
+        </div>
+      </div>
+      <aside></aside>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+@import "_reset-vars";
+
+* {
+  font-family: $myfont;
+}
+
+body {
+  background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/login/login-the-crown_2-1500x1000.jpg);
+  background-size: $sz3;
+}
+
+header {
+  img {
+    width: 250px;
+  }
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+}
+
+header {
+  a {
+    color: $col5;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    margin-right: 25px;
+    text-decoration: none;
+  }
+}
+
+header {
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.fpmain {
+  background-color: $col2;
+  width: 484px;
+  height: 500px;
+  margin: auto;
+  padding: 35px;
+}
+
+h1 {
+  color: $col3;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: $myfsize;
+}
+
+fieldset {
+  border: $disable;
+}
+
+.smallcol {
+  display: flex;
+  flex-direction: column;
+}
+
+#huey,
+#dewey {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.huey,
+.dewey {
+  display: flex;
+  align-items: center;
+  font-size: $myfsize;
+  font-weight: lighter;
+}
+
+label {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+#emailinp {
+  height: 40px;
+  font-size: $myfsize;
+  font-weight: lighter;
+}
+
+button {
+  margin-top: 15px;
+  height: 60px;
+  font-size: $myfsize;
+  color: $col2;
+  background: linear-gradient($lg1, $lg2);
+  border: $disable;
+}
+
+button:hover {
+  background: linear-gradient($lghov1, $lghov2);
+}
+
+::placeholder {
+  font-size: $myfsize;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 740px) {
+  header {
+    background-color: $col2;
+    border-bottom: 1px solid $col9;
+  }
+
+  .fpmain {
+    width: auto;
+    height: 80.5vh;
+  }
+}
+
+// TEST
